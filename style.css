@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Protest Riot', sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  padding: 20px;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 22px;
+  color: #e91e63;
+  margin-top: 20px;
+}
+
+.bold-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-yes {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-no {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Dòng cảm ơn */
+.thank-you {
+  display: none;
+  font-size: 24px;
+  color: #ff3399;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
+  text-align: center;
+  font-family: 'Protest Riot', cursive;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
